@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Росимпорт/Контакты</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylespage.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+   
+</head>
+<body>
+    <div class="site-container">
+        <header class="header seen">
+            <div class="container header__container">
+                <a href="index.html" class="logo header__logo">
+                    Росимпорт
+                </a>
+
+            <nav class="nav header__nav">
+                <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
+                <li class="nav__item"><a href="wines.html" class="nav__link">Каталог</a></li>
+                </ul>                
+            </nav>   
+            
+            </div>
+        </header>
+        <main class="contacts">
+            <div class="container">
+                <div class="contacts__details">
+                    <h4 class="contacts__name">ООО "Росимпорт"</h4>
+                    <div class="contacts__name-eng">Rosimport LTD</div>
+                    
+                        <div class="contacts__addres">195009, Санкт-Петербург, ул. Минеральная д.23, литера А, помещение 2 в пом. 16Н</div>
+                        <div class="contacts__addres-eng">195009 Mineralnaya street 23 lit A pom 2 v pom 16N, St.Petersburg, Russia</div>
+                        <a href="tel:+7(969)731-99-65" class="contacts__tel">
+                            <i class="fas fa-phone-alt"></i><div class="conts-link">+7(969)&nbsp;731-99-65</div>
+                        </a>
+                       <a href="mailto:rosimport@yahoo.com" class="contacts__email">
+                       <i class="fas fa-envelope"></i><div class="conts-link">rosimport@yahoo.com</div>
+                       </a>  
+                </div>
+
+                <button class="btn btn-fill btn-reset" data-path="form-popup">Связаться с нами</button>
+
+            </div>
+            
+        </main>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__text">Внимание, чрезмерное употребление алкоголя вредит вашему здоровью!<br>
+              Данный контент предназначен для аудитории 18+
+             
+          </div>
+          <div class="footer__data">Росимпорт, 2021</div>
+          </div>
+          
+      </footer>
+
+    </div>
+    <div class="modals">
+        <div class="modal-overlay">
+          <div class="modal modal--1" data-target="form-popup">
+            <form>        
+              <input type="hidden" name="project_name" value="">
+              <input type="hidden" name="admin_email" value="rosimport@yahoo.com">
+              <input type="hidden" name="form_subject" value="">
+              <header> 
+                <div class="modal-name">  
+                  <label>
+                   <span>Ваше имя</span> 
+                   <input type="text" name="Имя" placeholder="">   
+                 </label>    
+      
+               </div>
+               <div class="modal-email">
+                <label>
+                  <span>Email</span> 
+                  <input type="email" name="email" placeholder=""> 
+                </label>
+                <div class="modal-message">
+                    <label>
+                        <span>Ваше сообщение</span>
+                        <textarea>                          
+                        </textarea>
+                    </label>
+                </div>
+                
+      
+              </div>
+      
+            </header>
+      
+      
+            <footer>
+              <button class="btn btn-reset modal-btn" data-path="form-popup">Отправить</button>        
+      
+            </footer>
+          </form>
+      
+        </div>
+      
+      </div>
+      </div>
+    
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script src="libs/jquery.inputmask.min.js"></script>
+    <script src="libs/jquery.validate.min.js"></script>
+    
+    <script src="js/burger.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/mask.js"></script>
+   
+</body>
+</html>
